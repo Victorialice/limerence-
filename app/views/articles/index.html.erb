@@ -1,0 +1,93 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Particles  by Free CSS Templates</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div id="header">
+      <div id="logo">
+        <h1><a href="#">个人主页 </a></h1>
+        <p><em>1506675573@qq.com <a href=""></a></em></p>
+      </div>
+      <hr />
+      <!-- end #logo -->
+      <div id="menu">
+        <ul>
+          <li><a href="#" class="first">首页</a></li>
+          <li class="current_page_item"><a href="#">文章</a></li>
+          <li><a href="#">个人介绍</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- end #header -->
+    <!-- end #header-wrapper -->
+    <div id="wrapper">
+      <div id="wrapper-bgtop">
+        <div id="wrapper-bgbtm">
+          <div id="page">
+            <div id="content">
+              <div class="post">
+                <% @articles.each do |article|%>
+                  <p class="meta"><%= article.created_at%> Posted by <a href="#">zhuwenqian</a></p>
+                  <h2 class="title"><a href="#"><%= article.title %> </a></h2>
+                  <div class="entry">
+                    <p><%= article.content %></p>
+                    <div>
+                      <a href="#" class="links">查看详情
+                      </a>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            </div>
+            <!-- end #content -->
+            <div id="sidebar">
+              <ul>
+                <li>
+                  <h2>个人兴趣爱好</h2>
+                  <p>ruby php python c mysql mysql html javascript css photoshop</p>
+                </li>
+                <li>
+                  <h2>后台 </h2>
+                  <ul>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">ruby</a></li>
+                    <li><a href="#">python</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <h2>Turpis nulla</h2>
+                  <ul>
+                    <li><a href="#">html</a></li>
+                    <li><a href="#">css</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Nec metus sed donec</a></li>
+                    <li><a href="#">Magna lacus bibendum mauris</a></li>
+                    <li><a href="#">Velit semper nisi molestie</a></li>
+                    <li><a href="#">Eget tempor eget nonummy</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- end #sidebar -->
+          </div>
+          <!-- end #page -->
+          <div style="clear: both;">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-bgcontent">
+      <div id="footer">
+        <p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+      </div>
+    </div>
+    <!-- end #footer -->
+  </body>
+</html>
+
+                  <h2></h2>
